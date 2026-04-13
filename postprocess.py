@@ -1,4 +1,5 @@
-import numpy as np import pandas as pd
+import numpy as np 
+import pandas as pd
 
 def compute_mean_queue(queue_time_series): 
   arr = np.asarray(queue_time_series) 
