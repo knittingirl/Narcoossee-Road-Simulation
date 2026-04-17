@@ -1,7 +1,7 @@
 import numpy as np
 
 class PlatoonArrivalGenerator: 
-  def init(self, horizon_s, dt, base_rate_veh_per_s, burst_prob=0.1, mean_burst_size=5, intra_burst_headway_s=1.0, seed=None): 
+  def __init__(self, horizon_s, dt, base_rate_veh_per_s, burst_prob=0.1, mean_burst_size=5, intra_burst_headway_s=1.0, seed=None): 
     self.horizon_s = horizon_s 
     self.dt = dt 
     self.steps = int(np.ceil(horizon_s / dt)) 

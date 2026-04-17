@@ -8,7 +8,7 @@ class Cell:
   storage_veh: float
 
 class CorridorGeometry: 
-  def init(self, n_cells: int, cell_length_m: float, lanes_per_cell: int): 
+  def __init__(self, n_cells: int, cell_length_m: float, lanes_per_cell: int): 
     self.n_cells = n_cells 
     self.cell_length_m = cell_length_m 
     self.lanes_per_cell = lanes_per_cell 
